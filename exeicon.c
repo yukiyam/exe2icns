@@ -825,6 +825,8 @@ int main(int argc, char *argv[])
 					ch = fgetc(stdin);
 					ov = tolower(ch) == 'y';
 				}
+				else
+					ov = 1;
 				fclose(ofp);
 			}
 			//
