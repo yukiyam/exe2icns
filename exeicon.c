@@ -851,6 +851,7 @@ int main(int argc, char *argv[])
 		}
 	}
 	else {
+		Usage(stderr);
 		return 1;
 	}
 }
