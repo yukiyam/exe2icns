@@ -19,7 +19,6 @@ enum {
 	kSuccess = 0,
 	kInvalidFile = 101,
 	kExeHasNoIcon = 102,
-	kI
 };
 
 enum {
