@@ -1,0 +1,16 @@
+syntax: glob
+
+exe2icns
+palette
+a.out
+*.o
+*.dSYM
+
+.DS_Store
+
+*.icns
+*.exe
+*.png
+*.tiff
+*.rsrc
+*.ico

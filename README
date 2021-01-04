@@ -1,0 +1,35 @@
+exe2icns
+
+This program reads a Windows Portable Executable (.exe) file and generates an 
+Apple .icns file from its main icon.
+
+
+Requirements
+
+- A C compiler.
+  You may have to edit some code to support old compilers.
+
+- One of zlib, ImageIO (Mac OS X), QuickTime for PNG encoding/decoding.
+
+- 'palette' tool requires Mac OS X and 32-bit build environment (or classic 
+  Mac OS).
+  This is a QuickDraw system palette dumper, and not needed by exe2icns.
+
+
+How to build...
+
+1. Edit Makefile.
+ You can choose PNG encoder/decoder from several png_*.o. 
+ Read Makefile for details.
+ You may also want to edit CFLAGS, etc. here.
+
+2. Run make.
+
+
+Notes
+
+The icons it can process are 16x16 (is32), 32x32 (il32), 48x48 (ih32), 128x128 
+(it32), 256x256 (ic07). Icons of other sizes are skipped.
+All icons are encoded into 32-bit format with 8-bit mask, even when the original
+icon has less colours. If the .exe has multiple icons with the same size, the
+one with the largest colour depth is used.
