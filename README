@@ -32,4 +32,4 @@ The icons it can process are 16x16 (is32), 32x32 (il32), 48x48 (ih32), 128x128
 (it32), 256x256 (ic07). Icons of other sizes are skipped.
 All icons are encoded into 32-bit format with 8-bit mask, even when the original
 icon has less colours. If the .exe has multiple icons with the same size, the
-one with the largest colour depth is used.
+first one in the icon group list whose depth >= 8 is used.
