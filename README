@@ -7,7 +7,9 @@ Apple .icns file from its main icon.
 Requirements
 
 - A C compiler.
-  You may have to edit some code to support old compilers.
+  The code relies on your compiler compiling a multicharacter literal 'abcd'
+  into 0x61626364. If it does not you need to modify the code by yourself.
+  You may also have to edit some code if you are using an old compiler.
 
 - One of zlib, ImageIO (Mac OS X), QuickTime for PNG encoding/decoding.
 
